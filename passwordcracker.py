@@ -7,7 +7,7 @@ password = getpass.getpass(prompt="Enter your password: ")
 
 def crack_password(password):
 
-    valid_characters = string.ascii_lowercase + string.digits
+    valid_characters = string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation
 
     password_length = len(password)
 
